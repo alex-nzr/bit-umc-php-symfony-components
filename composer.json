@@ -1,0 +1,36 @@
+{
+    "name": "alex-nzr/bit-umc-integration",
+    "description": "Library to integrate website with 1C BitUmc",
+    "license": "MIT",
+    "type": "library",
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexNzr\\BitUmcIntegration\\Controller\\": "src/Controller",
+            "AlexNzr\\BitUmcIntegration\\Service\\":    "src/Service",
+            "AlexNzr\\BitUmcIntegration\\Utils\\":      "src/Utils",
+            "AlexNzr\\BitUmcIntegration\\Config\\":     "src/Config",
+            "AlexNzr\\BitUmcIntegration\\Core\\":       "src/Core"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexey Nazarov",
+            "email": "jc1988x@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "symfony/routing": "^5.4",
+        "symfony/http-kernel": "^5.4",
+        "symfony/config": "^5.4",
+        "symfony/yaml": "^5.4",
+        "symfony/http-client": "^5.4",
+        "doctrine/annotations": "^1.13"
+    }
+}

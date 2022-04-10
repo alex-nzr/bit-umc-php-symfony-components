@@ -1,0 +1,60 @@
+#controllers:
+#    resource: ../src/Controller/
+#    type: annotation
+#kernel:
+#    resource: ../app.php
+#    type: annotation
+appointment.getData:
+    path: /appointment/getData
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::getAppointmentData
+    methods: [POST, GET]
+clinic.list:
+    path: /clinic/list
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::getClinicsList
+    methods: [POST, GET]
+employee.list:
+    path: /employee/list
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::getEmployeesList
+    methods: [POST, GET]
+nomenclature.list:
+    path: /nomenclature/list
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::getNomenclatureList
+    methods: [POST, GET]
+schedule.get:
+    path: /schedule/get
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::getSchedule
+    methods: [POST, GET]
+order.list:
+    path: /order/list
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::getOrdersList
+    methods: [POST, GET]
+order.add:
+    path: /order/add
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::addOrder
+    methods: [POST]
+order.delete:
+    path: /order/delete
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::deleteOrder
+    methods: [POST]
+client.list:
+    path: /client/list
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::getClientsList
+    methods: [POST, GET]
+client.update:
+    path: /client/update
+    controller: AlexNzr\BitUmcIntegration\Controller\OneCController::updateClient
+    methods: [POST]
+
+email.send:
+    path: /email/send
+    controller: AlexNzr\BitUmcIntegration\Controller\MailerController::sendEmail
+    methods: [ POST ]
+
+template.main:
+    path: [/, /template]
+    controller: AlexNzr\BitUmcIntegration\Controller\TemplateController::showTemplateList
+    methods: [ GET ]
+template.popup:
+    path: /template/popup
+    controller: AlexNzr\BitUmcIntegration\Controller\TemplateController::showExamplePopup
+    methods: [ GET ]

@@ -1,0 +1,19 @@
+# dependencies
+*/**/node_modules/
+*/**/vendor/
+/vendor/
+
+# production
+*/**/build/
+*/**/dist/
+
+#example app
+#/app.php
+#/.htaccess
+
+# misc
+/.idea/
+/docs/
+*/**/log.txt
+.DS_Store
+
