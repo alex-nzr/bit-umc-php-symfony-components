@@ -1,7 +1,6 @@
 {
     "name": "alex-nzr/bit-umc-integration",
     "description": "Library to integrate website with 1C BitUmc",
-    "license": "MIT",
     "type": "library",
     "config": {
         "optimize-autoloader": true,
